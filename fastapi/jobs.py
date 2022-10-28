@@ -35,12 +35,12 @@ def read_root():
     return {"health": "ok"}
 
 
-@app.get("/jobs")
+@app.get("/job")
 def list_jobs():
     return jobs
 
 
-@app.get("/jobs/{id}")
+@app.get("/job/{id}")
 def get_job(id):
     for job in jobs:
         if job["id"] == id:
