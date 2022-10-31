@@ -44,7 +44,7 @@ resource "aws_lb" "web_lb" {
 
 resource "aws_lb_listener" "webserver" {
   load_balancer_arn = aws_lb.web_lb.arn
-  port              = "8000"
+  port              = "80"
   protocol          = "HTTP"
   default_action {
     type             = "forward"

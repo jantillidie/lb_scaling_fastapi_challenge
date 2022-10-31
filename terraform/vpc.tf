@@ -100,13 +100,13 @@ resource "aws_route_table_association" "b" {
 
 resource "aws_security_group" "allow_http_ssh" {
   name        = "http_ssh"
-  description = "Allow HTTP on Port 8000 and SSH"
+  description = "Allow HTTP on Port 80 and SSH"
   vpc_id      = aws_vpc.fastapivpc.id
 
   ingress {
     description = "Http"
-    from_port   = 8000
-    to_port     = 8000
+    from_port   = 80
+    to_port     = 80
     protocol    = "tcp"
     security_groups = [ aws_security_group.allow_http_lb.id ]
 
