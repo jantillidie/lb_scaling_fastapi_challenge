@@ -6,6 +6,6 @@ cd to terraform directory and run `terraform init`, `terraform plan`, `terraform
 
 go to `http://YOUR_IP:8000`, `http://YOUR_IP:8000/job`, `http://YOUR_IP:8000/job/ID`
 
-TODO add loadbalancing
 TODO create github action
+
 TODO load job data
