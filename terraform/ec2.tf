@@ -37,7 +37,6 @@ resource "aws_instance" "fastapiec2" {
   vpc_security_group_ids      = [aws_security_group.ssh_http_security.id]
   key_name                    = "vockey"
   user_data                   = file("userdata.sh")
-  depends_on = [aws_s3_bucket.fastapibucket]
   tags = {
     "Name" = "fastapiec2"
   }

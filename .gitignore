@@ -3,3 +3,5 @@ __pycache__
 .terraform*
 terraform.tfstate*
 *.zip
+terraform_tmp
+.DS_Store
