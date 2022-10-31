@@ -25,4 +25,5 @@ s3_client.create_bucket(Bucket="jansfastapibucket87293847", CreateBucketConfigur
 # # upload the zip file
 filename = 'fastapi.zip'
 bucket_name = 'jansfastapibucket87293847'
-s3_client.upload_file(filename, bucket_name, filename)
+s3_client.upload_file(filename, bucket_name, filename,
+                      ExtraArgs={'ACL': 'public-read'})
